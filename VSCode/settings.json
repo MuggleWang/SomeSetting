@@ -1,0 +1,26 @@
+{
+    "python.pythonPath": "C:\\ProgramData\\Miniconda3\\python.exe",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": ["--max-line-length=120"],
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": ["--line-length", "120"],
+    
+    "editor.wordWrap": "on",
+    "editor.fontSize": 16,
+    //"editor.fontFamily": "Consolas, 'Courier New', monospace",
+    //"editor.fontFamily": "'Source Code Pro', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+    //"editor.fontFamily": "Monaco, Consolas, 'Courier New', monospace",
+    //"editor.fontFamily": "Menlo, Consolas, 'Courier New', monospace",
+    //"editor.fontLigatures": true,
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "vscode-icons",
+    "remote.SSH.showLoginTerminal": true,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "autoDocstring.docstringFormat": "sphinx",
+    "remote.SSH.remotePlatform": {
+        "Lab72": "linux"
+    }
+}
