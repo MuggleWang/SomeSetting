@@ -1,26 +1,54 @@
 {
-    "python.pythonPath": "C:\\ProgramData\\Miniconda3\\python.exe",
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.flake8Args": ["--max-line-length=120"],
-    "python.formatting.provider": "black",
-    "python.formatting.blackArgs": ["--line-length", "120"],
-    
-    "editor.wordWrap": "on",
-    "editor.fontSize": 16,
-    //"editor.fontFamily": "Consolas, 'Courier New', monospace",
-    //"editor.fontFamily": "'Source Code Pro', Consolas, 'Courier New', monospace",
-    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
-    //"editor.fontFamily": "Monaco, Consolas, 'Courier New', monospace",
-    //"editor.fontFamily": "Menlo, Consolas, 'Courier New', monospace",
-    //"editor.fontLigatures": true,
-    "workbench.colorTheme": "One Dark Pro",
-    "workbench.iconTheme": "vscode-icons",
-    "remote.SSH.showLoginTerminal": true,
-    "editor.formatOnType": true,
-    "editor.formatOnPaste": true,
+    "telemetry.telemetryLevel": "off",
+
+    // Python
+    "python.condaPath": "/Users/wyf/miniforge3/condabin/conda",
+    "python.defaultInterpreterPath": "/Users/wyf/miniforge3/bin/python",
+    "python.languageServer": "Pylance",
+    // "python.linting.enabled": false,
+    // "python.linting.flake8Enabled": true,
+    // "python.linting.flake8Args": ["--max-line-length=120"],
+    // "python.formatting.provider": "black",
+    // "python.formatting.blackArgs": ["--line-length", "120"],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.vscode-pylance"
+    },
     "autoDocstring.docstringFormat": "sphinx",
-    "remote.SSH.remotePlatform": {
-        "Lab72": "linux"
-    }
+
+    // C & C++
+    "C_Cpp.formatting": "Disabled",
+    "C_Cpp.autocomplete": "Disabled",
+    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}/build",
+        // "--query-driver=/usr/bin/clang++",
+        "--background-index",
+        "--log=verbose",
+        "--clang-tidy",
+        "--pretty"
+    ],
+    
+    // Editor
+    "editor.lineHeight": 22,
+    "editor.fontSize": 14,  // 14-21, 15-23, 16-24
+    // "editor.fontFamily": "'Source Code Pro', Consolas, 'Courier New', monospace",
+    // "editor.fontLigatures": true,
+    // "editor.formatOnType": true,
+    // "editor.formatOnPaste": true,
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.colorTheme": "JetBrains Darcula Theme",
+    "oneDark.italic": false,
+    "workbench.tree.indent": 24,
+    "workbench.editor.wrapTabs": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    // Remote
+    "remote.downloadExtensionsLocally": true,
+    "remote.SSH.showLoginTerminal": true,
+    "remote.SSH.useLocalServer": false,
+
+    // Terminal
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.fontFamily": "Monaco",
 }
